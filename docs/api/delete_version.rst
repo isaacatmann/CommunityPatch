@@ -1,7 +1,7 @@
 Delete a Version from a Software Title
 ======================================
 
-DELETE /api/v1/titles/{ID}/versions/{VERSION}
+DELETE /api/v1/titles/{ID}/version/{VERSION}
 ---------------------------------------------
 
 Delete a version from a software title's definition. The advertised
@@ -22,7 +22,7 @@ is after the operation.
 
 .. code-block:: text
 
-    DELETE /api/v1/titles/{ID}/versions/{VERSION}
+    DELETE /api/v1/titles/{ID}/version/{VERSION}
 
 Response
 --------
@@ -48,6 +48,6 @@ An example using ``curl``:
 
 .. code-block:: bash
 
-    curl https://beta2.communitypatch.com/api/v1/titles/{ID}/versions/{VERSION} \
+    curl https://beta2.communitypatch.com/api/v1/titles/{ID}/version/{VERSION} \
         -X DELETE \
         -H 'Authorization: Bearer {API-KEY}'
